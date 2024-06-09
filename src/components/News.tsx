@@ -10,7 +10,11 @@ interface props {
       uri: string,
       slug: string,
       excerpt: string,
-      featuredImage: object | null
+      featuredImage: {
+        node: {
+          sourceUrl: string
+        }
+      }
     }[]
   }
 }
