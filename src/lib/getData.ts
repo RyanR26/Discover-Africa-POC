@@ -9,8 +9,7 @@ export default async function getPage(query: string) {
     query
     })
   })
-  // console.log('RESPONSE ', response)
+
   const json = await response.json();
-  // console.log('PAGE DATA', json);
   return json;
 }
