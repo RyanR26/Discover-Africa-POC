@@ -1,7 +1,22 @@
 import React from 'react'
+import { Metadata } from 'next';
 import Link from 'next/link'
 import getData from '@/lib/getData';
 import { threeColComponent } from '@/queries/queries';
+
+export const metadata: Metadata = {
+  title: "Discover Africa About Page",
+  description: "Luxury African travel - Learn more about us",
+  openGraph: {
+    title: "Discover Africa About Page",
+    description: "Luxury African travel - Learn more about us",
+    url: "https://discover-africa-af86d0g28-ryanr26s-projects.vercel.app/",
+    siteName: "Discover Africa",
+    images: [{
+      url: ""
+    }]
+  }
+};
 
 export default async function page() {
 

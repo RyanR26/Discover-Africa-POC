@@ -43,7 +43,7 @@ export default function News(props: props) {
                 </h2>
                 <div className="excerpt" dangerouslySetInnerHTML={{ __html: node.excerpt }}></div>
                 <div className="card-actions justify-end mt-auto pt-10">
-                  <Link className="btn btn-primary flex-1" href={`blog/${node.slug}`} prefetch={false}>Read more</Link>
+                  <Link className="btn btn-primary flex-1" href={`blog/${node.slug}`} prefetch={true}>Learn more</Link>
                 </div>
               </div>
             </div>
